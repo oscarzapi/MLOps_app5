@@ -1,1 +1,8 @@
 numba==0.53
+pandas
+numpy
+pycaret
+fastapi
+uvicorn
+python-multipart
+asgiref
