@@ -6,3 +6,5 @@ fastapi
 uvicorn
 python-multipart
 asgiref
+react-router-dom
+react-dates
