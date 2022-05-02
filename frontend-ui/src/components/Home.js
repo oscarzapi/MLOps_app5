@@ -35,24 +35,22 @@ const JsonForm = ()=> {
      } 
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
       event.preventDefault()
       const url = new URL("http://localhost:8000/predict_from_dates")
       var params = {'startDate':startDate, 'endDate': endDate}
       url.search = new URLSearchParams(params).toString()
       const reqOpt = {method: "POST",  headers: {"Content-type": "application/json"},  body: JSON.stringify()}
-      fetch(url,reqOpt)
-        .then((resp) => console.log(resp.json()))
+      const resp = await fetch(url,reqOpt)
+        .then((response) => (response.json()))
+        .then(data => {return data})
+        .catch(error => {console.log(error)})
+
+      console.log(resp)
     }
   
   return(
     <>
-    <pre style={{ textAlign: "left" }}>
-          <p> start date : {JSON.stringify(startDate)} </p>
-          <p> start date Formatted: {startDateFormatted} </p>
-          <p> end date : {JSON.stringify(endDate)} </p>
-          <p> end date Formatted : {endDateFormatted} </p>
-        </pre>
     <DateRangePicker 
     startDate={startDate} 
     startDateId="start_date_id" 

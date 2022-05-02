@@ -30,16 +30,16 @@ model = load_model('time-series-forecast-pipeline')
 @app.post('/predict_from_dates')
 
 async def insert_dates(startDate,endDate):
-    # startDateFormatted = datetime.strptime(startDate, '%A %m %d %y %H:%M:%S')
-    # endDateFormatted = datetime.strptime(endDate, '%A %m %d %y %H:%M:%S')
+    startDateFormatted = str(pd.to_datetime(startDate).date())
+    endDateFormatted = str(pd.to_datetime(endDate).date())
 
-    #print(type(startDateFormatted), endDateFormatted)
 #async def upload_file(file:UploadFile):
     #contents = await file.read()
     #csv_reader = csv.reader(codecs.iterdecode(file.file,'utf-8')) 
     
     # Input the future dates to be predicted
-    future_dates = pd.date_range(start=startDate, end=endDate, freq = 'MS')
+    future_dates = pd.date_range(start=startDateFormatted, end=endDateFormatted, freq = 'MS')
+    print(startDateFormatted,type(endDateFormatted))
 
     future_df = pd.DataFrame()
 

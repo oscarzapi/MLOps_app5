@@ -926,3 +926,673 @@
                                                  verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
 2022-05-02 15:12:36,653:INFO:Checking exceptions
 2022-05-02 15:12:36,653:INFO:Preloading libraries
+2022-05-02 16:41:40,604:INFO:Initializing predict_model()
+2022-05-02 16:41:40,605:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:41:40,605:INFO:Checking exceptions
+2022-05-02 16:41:40,605:INFO:Preloading libraries
+2022-05-02 16:42:53,592:INFO:Initializing load_model()
+2022-05-02 16:42:53,592:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:43:40,152:INFO:Initializing load_model()
+2022-05-02 16:43:40,153:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:43:49,047:INFO:Initializing load_model()
+2022-05-02 16:43:49,048:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:44:08,917:INFO:Initializing load_model()
+2022-05-02 16:44:08,917:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:44:09,166:INFO:Initializing predict_model()
+2022-05-02 16:44:09,166:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:44:09,167:INFO:Checking exceptions
+2022-05-02 16:44:09,167:INFO:Preloading libraries
+2022-05-02 16:45:46,752:INFO:Initializing load_model()
+2022-05-02 16:45:46,752:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:45:46,974:INFO:Initializing predict_model()
+2022-05-02 16:45:46,974:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:45:46,974:INFO:Checking exceptions
+2022-05-02 16:45:46,974:INFO:Preloading libraries
+2022-05-02 16:49:04,085:INFO:Initializing load_model()
+2022-05-02 16:49:04,085:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:49:36,076:INFO:Initializing load_model()
+2022-05-02 16:49:36,080:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:49:36,454:INFO:Initializing predict_model()
+2022-05-02 16:49:36,454:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:49:36,454:INFO:Checking exceptions
+2022-05-02 16:49:36,454:INFO:Preloading libraries
+2022-05-02 16:51:41,643:INFO:Initializing load_model()
+2022-05-02 16:51:41,644:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:51:41,956:INFO:Initializing predict_model()
+2022-05-02 16:51:41,957:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:51:41,957:INFO:Checking exceptions
+2022-05-02 16:51:41,957:INFO:Preloading libraries
+2022-05-02 16:52:43,543:INFO:Initializing load_model()
+2022-05-02 16:52:43,555:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:52:43,928:INFO:Initializing predict_model()
+2022-05-02 16:52:43,931:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:52:43,931:INFO:Checking exceptions
+2022-05-02 16:52:43,931:INFO:Preloading libraries
+2022-05-02 16:53:59,239:INFO:Initializing load_model()
+2022-05-02 16:53:59,240:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:53:59,442:INFO:Initializing predict_model()
+2022-05-02 16:53:59,443:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:53:59,443:INFO:Checking exceptions
+2022-05-02 16:53:59,443:INFO:Preloading libraries
+2022-05-02 16:54:47,761:INFO:Initializing load_model()
+2022-05-02 16:54:47,762:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:54:51,770:INFO:Initializing predict_model()
+2022-05-02 16:54:51,770:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:54:51,771:INFO:Checking exceptions
+2022-05-02 16:54:51,771:INFO:Preloading libraries
+2022-05-02 16:55:46,077:INFO:Initializing load_model()
+2022-05-02 16:55:46,094:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:55:47,467:INFO:Initializing predict_model()
+2022-05-02 16:55:47,468:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:55:47,471:INFO:Checking exceptions
+2022-05-02 16:55:47,471:INFO:Preloading libraries
+2022-05-02 16:56:30,127:INFO:Initializing load_model()
+2022-05-02 16:56:30,127:INFO:load_model(model_name=time-series-forecast-pipeline, platform=None, authentication=None, verbose=True)
+2022-05-02 16:56:30,855:INFO:Initializing predict_model()
+2022-05-02 16:56:30,855:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:56:30,856:INFO:Checking exceptions
+2022-05-02 16:56:30,856:INFO:Preloading libraries
+2022-05-02 16:58:49,385:INFO:Initializing predict_model()
+2022-05-02 16:58:49,395:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:58:49,395:INFO:Checking exceptions
+2022-05-02 16:58:49,395:INFO:Preloading libraries
+2022-05-02 16:59:45,978:INFO:Initializing predict_model()
+2022-05-02 16:59:45,987:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 16:59:45,996:INFO:Checking exceptions
+2022-05-02 16:59:45,997:INFO:Preloading libraries
+2022-05-02 17:00:52,987:INFO:Initializing predict_model()
+2022-05-02 17:00:52,988:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:00:52,988:INFO:Checking exceptions
+2022-05-02 17:00:52,988:INFO:Preloading libraries
+2022-05-02 17:03:29,137:INFO:Initializing predict_model()
+2022-05-02 17:03:29,137:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:03:29,137:INFO:Checking exceptions
+2022-05-02 17:03:29,137:INFO:Preloading libraries
+2022-05-02 17:04:14,312:INFO:Initializing predict_model()
+2022-05-02 17:04:14,313:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:04:14,313:INFO:Checking exceptions
+2022-05-02 17:04:14,313:INFO:Preloading libraries
+2022-05-02 17:04:55,756:INFO:Initializing predict_model()
+2022-05-02 17:04:55,757:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:04:55,757:INFO:Checking exceptions
+2022-05-02 17:04:55,757:INFO:Preloading libraries
+2022-05-02 17:07:14,308:INFO:Initializing predict_model()
+2022-05-02 17:07:14,308:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:07:14,308:INFO:Checking exceptions
+2022-05-02 17:07:14,308:INFO:Preloading libraries
+2022-05-02 17:07:32,265:INFO:Initializing predict_model()
+2022-05-02 17:07:32,271:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:07:32,271:INFO:Checking exceptions
+2022-05-02 17:07:32,271:INFO:Preloading libraries
+2022-05-02 17:08:00,010:INFO:Initializing predict_model()
+2022-05-02 17:08:00,011:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:08:00,011:INFO:Checking exceptions
+2022-05-02 17:08:00,011:INFO:Preloading libraries
+2022-05-02 17:08:41,194:INFO:Initializing predict_model()
+2022-05-02 17:08:41,256:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:08:41,257:INFO:Checking exceptions
+2022-05-02 17:08:41,261:INFO:Preloading libraries
+2022-05-02 17:09:11,514:INFO:Initializing predict_model()
+2022-05-02 17:09:11,519:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:09:11,519:INFO:Checking exceptions
+2022-05-02 17:09:11,519:INFO:Preloading libraries
+2022-05-02 17:09:25,508:INFO:Initializing predict_model()
+2022-05-02 17:09:25,509:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:09:25,509:INFO:Checking exceptions
+2022-05-02 17:09:25,509:INFO:Preloading libraries
+2022-05-02 17:12:37,025:INFO:Initializing predict_model()
+2022-05-02 17:12:37,026:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression',
+                                      numerical_features=['Year', 'Series'],
+                                      target='#Passengers')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(repla...
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 PowerTransformedTargetRegressor(copy_X=True,
+                                                 eps=2.220446049250313e-16,
+                                                 fit_intercept=True,
+                                                 fit_path=True, jitter=None,
+                                                 n_nonzero_coefs=500,
+                                                 normalize=True,
+                                                 precompute='auto',
+                                                 random_state=123,
+                                                 regressor=Lars(random_state=123),
+                                                 verbose=False)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
+2022-05-02 17:12:37,026:INFO:Checking exceptions
+2022-05-02 17:12:37,026:INFO:Preloading libraries
