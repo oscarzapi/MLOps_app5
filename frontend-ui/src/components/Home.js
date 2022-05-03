@@ -3,6 +3,7 @@ import { DateRangePicker } from "react-dates";
 import "react-dates/lib/css/_datepicker.css";
 import '../App.css';
 import { useState } from "react";
+import Chart from "./Chart";
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ const JsonForm = ()=> {
   const [focusedInput, setFocusedInput] = useState()
   const [startDateFormatted, setStartDateFormatted] = useState(null)
   const [endDateFormatted, setEndDateFormatted] = useState(null)
-  
+  const [data, setData] = useState([])
   
   const hundleDateChange = (startDate, endDate) => { 
     setStartDate(startDate)
@@ -43,7 +44,9 @@ const JsonForm = ()=> {
       const reqOpt = {method: "POST",  headers: {"Content-type": "application/json"},  body: JSON.stringify()}
       const resp = await fetch(url,reqOpt)
         .then((response) => (response.json()))
-        .then(data => {return data})
+        .then(data => {
+          setData(data)
+          return data})
         .catch(error => {console.log(error)})
 
       console.log(resp)
@@ -62,6 +65,7 @@ const JsonForm = ()=> {
     <form onSubmit={handleSubmit}>
       <input type="submit" value="submit"></input>
     </form>
+    <Chart data={data}></Chart>
     </>
     
   )
