@@ -6,6 +6,7 @@ function UploadFile() {
 
   const [data,setData] = useState([])
   const [selectFile, setSelectFile] = useState("")
+  let dataAux = []
 
   const handleSubmit = (event)=> {
     console.log(event.target.name,event.target.files[0])
@@ -20,10 +21,18 @@ function UploadFile() {
 
     const reqOpt = {method:"POST", body:formData}
     const resp = await fetch(url, reqOpt)
-    const resp2 = await resp.json()
+    .then(resp => resp.json())
+    .then(resp2 => {
+      resp2.forEach(e => {
+        dataAux.push({'date': '01/'.concat(e.MonthNum, '/', e.Year), 'value':e.Label })
+    });
+    setData(dataAux)
+    })
 
-    setData(resp2)
+    console.log(data)
 
+    
+    setData(dataAux)
   }
 
   return (

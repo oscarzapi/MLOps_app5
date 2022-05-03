@@ -23,7 +23,8 @@ const JsonForm = ()=> {
   const [startDateFormatted, setStartDateFormatted] = useState(null)
   const [endDateFormatted, setEndDateFormatted] = useState(null)
   const [data, setData] = useState([])
-  
+  let dataAux = []
+
   const hundleDateChange = (startDate, endDate) => { 
     setStartDate(startDate)
     setEndDate(endDate)
@@ -44,12 +45,15 @@ const JsonForm = ()=> {
       const reqOpt = {method: "POST",  headers: {"Content-type": "application/json"},  body: JSON.stringify()}
       const resp = await fetch(url,reqOpt)
         .then((response) => (response.json()))
-        .then(data => {
-          setData(data)
-          return data})
+        .then(d => {
+          d.forEach(e => {
+            dataAux.push({'date': '01/'.concat(e.MonthNum, '/', e.Year), 'value':e.Label })
+          });
+          setData(dataAux)
+          })
         .catch(error => {console.log(error)})
 
-      console.log(resp)
+      console.log(data)
     }
   
   return(

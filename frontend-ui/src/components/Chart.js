@@ -6,18 +6,18 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 am4core.useTheme(am4themes_animated);
 
-function Chart(response) {
-    // console.log(response)
+function Chart(props) {
+  console.log(props)
   const chart = useRef(null);
 
-  let dataAux = response.data
+  let dataAux = props.data
   let data = []
 
   dataAux.forEach(e => {
       data.push({'date': '01/'.concat(e.MonthNum, '/', e.Year), 'value':e.Label })
   });
 
-  console.log(data)
+  // console.log(data)
 
   useLayoutEffect(() => {
     let x = am4core.create("chartdiv", am4charts.XYChart);
@@ -51,10 +51,12 @@ function Chart(response) {
     };
   }, []);
 
+  useLayoutEffect(() => {
+    chart.current.data = props.data;
+}, [props.data]);
+
   return (
-    <>
     <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
-    </>
   );
 }
 export default Chart;
