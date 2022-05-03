@@ -39,7 +39,7 @@ async def insert_dates(startDate,endDate):
     
     # Input the future dates to be predicted
     future_dates = pd.date_range(start=startDateFormatted, end=endDateFormatted, freq = 'MS')
-    print(startDateFormatted,type(endDateFormatted))
+    # print(startDateFormatted,type(endDateFormatted))
 
     future_df = pd.DataFrame()
 
@@ -48,14 +48,25 @@ async def insert_dates(startDate,endDate):
     future_df['Series'] = np.arange(145,(145+len(future_dates)))
     predictions_future = predict_model(model, data=future_df)
     return predictions_future.to_dict(orient='records')
-        
 
-# def predict(carat_weight, cut, color, clarity, polish, symmetry, report):
-#     data = pd.DataFrame([[carat_weight, cut, color, clarity, polish, symmetry, report]])
-#     data.columns = ['Carat Weight', 'Cut', 'Color', 'Clarity', 'Polish', 'Symmetry', 'Report']
+@app.post('/predict_from_file')
 
-#     predictions = predict_model(model, data=data) 
-#     return {'prediction': int(predictions['Label'][0])}
+async def upload_file(file:UploadFile):
+    csv_reader = csv.reader(codecs.iterdecode(file.file,'utf-8')) 
+    header = csv_reader.__next__()
+    df = pd.DataFrame(csv_reader, columns=header)
+    
+    future_dates = pd.date_range(start=min(df['Month']), end=max(df['Month']), freq = 'MS')
+    future_df = pd.DataFrame(columns=['MonthNum', 'Year', 'Series'])
+
+    
+
+    future_df['MonthNum'] = pd.DatetimeIndex(df['Month']).month
+    future_df['Year'] = pd.DatetimeIndex(df['Month']).year    
+    future_df['Series'] = np.arange(145,(145+len(future_dates)))
+    print(future_df)
+    predictions_future = predict_model(model, data=future_df)
+    return predictions_future.to_dict(orient='records')
 
 if __name__ == '__main__':
     uvicorn.run(app, host='127.0.0.1', port=8000)

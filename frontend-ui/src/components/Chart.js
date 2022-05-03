@@ -7,6 +7,7 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 am4core.useTheme(am4themes_animated);
 
 function Chart(response) {
+    // console.log(response)
   const chart = useRef(null);
 
   let dataAux = response.data
@@ -51,7 +52,9 @@ function Chart(response) {
   }, []);
 
   return (
+    <>
     <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
+    </>
   );
 }
 export default Chart;
